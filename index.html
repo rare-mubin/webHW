@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="index.html">
+            <svg width="107" height="25" viewBox="0 0 107 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#FCFCFC"/>
+            <path d="M39.8423 19.74C35.4023 19.74 32.6223 16.8 32.6223 12.12C32.6223 7.5 35.5623 4.46 39.9823 4.46C43.6823 4.46 46.3423 6.58 46.8023 9.9H43.3823C42.9423 8.42 41.6823 7.58 39.9023 7.58C37.5023 7.58 36.0423 9.28 36.0423 12.1C36.0423 14.88 37.5223 16.62 39.9023 16.62C41.7223 16.62 43.0623 15.72 43.4623 14.26H46.8223C46.3023 17.56 43.5423 19.74 39.8423 19.74ZM48.0692 14.48C48.0692 11.32 50.3892 9.2 53.5892 9.2C56.7692 9.2 59.0892 11.32 59.0892 14.48C59.0892 17.64 56.7692 19.74 53.5892 19.74C50.3892 19.74 48.0692 17.64 48.0692 14.48ZM51.1692 14.46C51.1692 15.98 52.1492 16.98 53.5892 16.98C55.0092 16.98 55.9892 15.98 55.9892 14.46C55.9892 12.96 55.0092 11.96 53.5892 11.96C52.1492 11.96 51.1692 12.96 51.1692 14.46ZM63.9548 19.5H60.8748V9.5H63.7548L63.9548 10.54C64.4548 9.84 65.4348 9.18 66.8748 9.18C68.3748 9.18 69.3348 9.88 69.9148 10.94C70.4348 9.88 71.6148 9.18 73.0548 9.18C75.6348 9.18 76.9148 10.68 76.9148 12.96V19.5H73.8348V13.82C73.8348 12.56 73.1748 11.96 72.1948 11.96C71.3148 11.96 70.4348 12.44 70.4348 14.14V19.5H67.3548V13.82C67.3548 12.58 66.7148 11.98 65.7348 11.98C64.8548 11.98 63.9548 12.46 63.9548 14.14V19.5ZM78.177 9.5H79.557V8.7C79.557 5.72 81.117 4.42 83.657 4.42C84.077 4.42 84.557 4.46 85.037 4.54V7.18H84.177C82.917 7.18 82.637 7.84 82.637 8.7V9.5H85.037V12.06H82.637V19.5H79.557V12.06H78.177V9.5ZM90.7688 19.76C87.7488 19.76 85.5888 17.56 85.5888 14.48C85.5888 11.36 87.6888 9.18 90.7088 9.18C93.8488 9.18 95.8088 11.24 95.8088 14.5V15.28L88.5488 15.32C88.7288 16.64 89.4688 17.26 90.8288 17.26C91.9888 17.26 92.8088 16.84 93.0288 16.12H95.8488C95.4888 18.34 93.5088 19.76 90.7688 19.76ZM90.7288 11.68C89.5088 11.68 88.8288 12.22 88.5888 13.42H92.7488C92.7488 12.36 91.9688 11.68 90.7288 11.68ZM100.555 19.76C98.435 19.76 97.115 18.52 97.115 16.56C97.115 14.72 98.415 13.58 100.815 13.4L103.615 13.18V13.02C103.615 12.04 103.015 11.52 101.915 11.52C100.615 11.52 99.915 12.02 99.915 12.92H97.355C97.355 10.66 99.215 9.18 102.075 9.18C104.975 9.18 106.615 10.8 106.615 13.66V19.5H103.895L103.695 18.18C103.375 19.1 102.055 19.76 100.555 19.76ZM101.635 17.48C102.815 17.48 103.635 16.9 103.635 15.76V15.22L102.075 15.36C100.735 15.48 100.255 15.78 100.255 16.42C100.255 17.14 100.695 17.48 101.635 17.48Z" fill="#FCFCFC"/>
+            </svg>
+        </a>
+        <div class="nav-links">
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="about.html">About us</a>
+            <a class="btn" href="contact.html">Contact</a>
+            <a class="btn" href="Property.html">Property</a>
+            <a class="btn" href="Agent.html">Agent</a>
+            <a class="btn" href="Blog.html">Blog</a>
+            <a class="btn" href="FAQ.html">FAQ's</a>
+        </div>
+        
+        <a class="contactBTN" href="contact.html" role="button">Contact Us</a>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-items">
+                <h1 class="hero-text">Discover Your Ideal Living Space Here</h1>
+                <div class="scroll-btn">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_b_1_5416)">
+                        <rect width="80" height="80" rx="40" fill="white" fill-opacity="0.05"/>
+                        <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" stroke="white"/>
+                        <path d="M40.0003 30.6667V49.3334M40.0003 49.3334L49.3337 40.0001M40.0003 49.3334L30.667 40.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_b_1_5416" x="-30" y="-30" width="140" height="140" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="15"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_5416"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_5416" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                </div>
+                <div class="image-gallery">
+                    <img class="Gallery-image" src="images/Gallery Image.png" alt="Gallery Image">
+                    <img class="Gallery-image" src="images/Gallery Image 2.png" alt="Gallery Image">
+                    <img class="Gallery-image" src="images/Gallery Image 3.png" alt="Gallery Image">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <div class="text-content">
+                <div class="title-text">
+                    <h2 class="about-title">Discover Our Commitment to Your Real Estate Success</h2>
+                    <a class="LearnMoreBTN" href="learnmore.html" role="button">Learn More</a>
+                </div>
+                <p class="about-text">
+                        We are committed to making your real estate experience smooth, rewarding, and stress-free. Our team of
+                         dedicated professionals brings years of expertise to the table, helping you navigate the real estate 
+                         market with confidence. Whether you're buying, selling, or renting, we are here to offer personalized 
+                         guidance and ensure your goals are met.
+                        <br><br>
+                        Founded on the principles of trust, transparency, and customer satisfaction, we pride ourselves 
+                        on delivering exceptional service. Our comprehensive knowledge of the local market allows us to offer a 
+                        wide range of properties tailored to fit every lifestyle and budget. From luxury homes to affordable 
+                        rentals, we provide our clients with the best options to match their needs
+                </p>
+            </div>
+
+            <div class="image-content">
+                <div class="imageCard1">
+                    <img class="Property_Image" src="images/Property Image.png" alt="About Image 1">
+                    <h2 class="text">Expert Team</h2>
+                    <p class="text">Our architects and engineers are leaders in the industry</p>
+                </div>
+                <div class="imageCard2">
+                    <img class="Property_Image" src="images/Property Image 2.png" alt="About Image 1">
+                    <h2 class="text">Innovative Designs</h2>
+                    <p class="text">We push the boundaries of design to create unique spaces that inspire and elevate.</p>
+                </div>
+                <div class="imageCard3">
+                    <img class="Property_Image" src="images/Property Image 3.png" alt="About Image 1">
+                    <h2 class="text">Client-Centered Approach</h2>
+                    <p class="text">We work closely with you throughout the entire process, ensuring that your vision is fully realized.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="Property-listing">
+        <div class="Property-content">
+            <div class="Property-listing-title">
+                <h2 class="Property-title">Our Property Listings</h2>
+                <p class="Property-text">Discover your dream property from our curated selection of houses, apartments, and villas. Whether you're looking to buy or rent, we offer a variety of options to suit your lifestyle and budget</p>
+            </div>
+
+            <div class="Property-list">
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property1.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property2.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+                
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="Property-card">
+                    <img class="Property-image" src="images/Property3.png" alt="Property Image 1">
+                    <div class="Property-details">
+                        <div class="Property-name-price">
+                            <div class="Property-title">
+                                <p class="Property-name text">Asri Permata</h2>
+                                <div class="Property-address">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.6663 8.33341C16.6663 12.0153 9.99967 18.3334 9.99967 18.3334C9.99967 18.3334 3.33301 12.0153 3.33301 8.33341C3.33301 4.65151 6.31777 1.66675 9.99967 1.66675C13.6816 1.66675 16.6663 4.65151 16.6663 8.33341Z" stroke="#18181B" stroke-width="1.25"/>
+                                        <path d="M10.0003 9.16679C10.4606 9.16679 10.8337 8.79371 10.8337 8.33346C10.8337 7.87322 10.4606 7.50012 10.0003 7.50012C9.54008 7.50012 9.16699 7.87322 9.16699 8.33346C9.16699 8.79371 9.54008 9.16679 10.0003 9.16679Z" fill="#18181B" stroke="#18181B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <p class="address text">100 High St, London, W1D 1NR</p>                                        
+                                </div>
+                            </div>
+
+                            <p class="Property-price text">$1,200</p>
+
+                        </div>
+                        <svg width="420" height="2" viewBox="0 0 420 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.25" x2="420" y2="1.25" stroke="#E4E4E7" stroke-width="1.5"/>
+                        </svg>
+
+                        <div class="Property-capacity">
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.5H7V7.5C7 6.397 7.897 5.5 9 5.5C10.103 5.5 11 6.397 11 7.5H13C13 5.294 11.206 3.5 9 3.5C6.794 3.5 5 5.294 5 7.5V10.5H3C2.73478 10.5 2.48043 10.6054 2.29289 10.7929C2.10536 10.9804 2 11.2348 2 11.5V13.5C2 16.106 3.674 18.323 6 19.15V22.5H8V19.5H16V22.5H18V19.15C20.326 18.323 22 16.106 22 13.5V11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM20 13.5C20 15.706 18.206 17.5 16 17.5H8C5.794 17.5 4 15.706 4 13.5V12.5H20V13.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="capacity-text">2 Bathroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 7.057V0.5H16.5V2.5H4.5V0.5H2.5V7.057C1.31 7.75 0.5 9.025 0.5 10.5V14.5C0.5 14.7652 0.605357 15.0196 0.792893 15.2071C0.98043 15.3946 1.23478 15.5 1.5 15.5H2.5V19.5H4.5V15.5H16.5V19.5H18.5V15.5H19.5C19.7652 15.5 20.0196 15.3946 20.2071 15.2071C20.3946 15.0196 20.5 14.7652 20.5 14.5V10.5C20.5 9.025 19.689 7.75 18.5 7.057ZM16.5 4.5V6.5H11.5V4.5H16.5ZM4.5 4.5H9.5V6.5H4.5V4.5ZM18.5 13.5H2.5V10.5C2.5 9.397 3.397 8.5 4.5 8.5H16.5C17.603 8.5 18.5 9.397 18.5 10.5V13.5Z" fill="#70707B"/>
+                                </svg>
+                                    
+                                <p class="capacity-text">3  Bedroom</p>
+                            </div>
+
+                            <svg width="2" height="13" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 0.5L1.25 12.5" stroke="#E4E4E7" stroke-linecap="round"/>
+                            </svg>
+
+                            <div class="Property-capacity-item">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4.5H4V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="capacity-text">1,300 sq ft</p>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+                
+            </div>
+            <a class="LearnMoreBTN" href="Viewmore.html" role="button">View More</a>
+        </div>
+    </section>
+
+    <section class="FAQ-section">
+        <div class="FAQ-container">
+            <div class="FAQ-Header">
+                <h2 class="FAQ-Title">Frequently Asked Questions</h2>
+                <p class="FAQ-Subtitle">
+                    At our real estate agency, we understand that buying or selling a 
+                    home can be a daunting process. That’s why we’ve compiled a list of frequently asked 
+                    questions to help guide you through your journey.
+                </p>
+                <img class="FAQ-Image" src="images/FAQ Image.png" alt="FAQ Image">
+            </div>
+        </div>
+        <div class="FAQ-Questions">
+            <div class="Questions">
+                    <p>How do I start the process of buying a property?</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </div>
+
+            <div class="Questions">
+                <p>What should I look for when buying a home?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="Questions">
+                <p>How much do I need for a down payment?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="Questions">
+                <p>Can I get help with selling my property?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="Questions">
+                <p>Do you offer property management services?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="Questions">
+                <p>What are the fees involved when buying or selling a property?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="Questions">
+                <p>How can I find out if I’m eligible for a mortgage?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="Questions">
+                <p>What type of properties does your agency specialize in?</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 18V6" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="Blog-Section">
+        <div class="Blog-content">
+            <div class="Property-listing-title">
+                <h2 class="Property-title">Real Estate Tips & Insights</h2>
+                <p class="Property-text">Explore expert advice and creative ideas to enhance your living spaces. From modern kitchen designs to cozy bedroom décor and innovative lighting concepts</p>
+            </div>
+            <div class="Blog-Post">
+
+                <div class="Blog-Card">
+                    <img class="Blog-Image" src="images/BlogImage.png" alt="Blog Image">
+                    <div class="Blog-Details">
+                        <div class="Blog-Date">
+                            <p class="Blog-Date-Text">May 16, 2024</p>
+                            <div class="Read-time">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="Blog-Read-time">12 min reading time</p>
+                            </div>
+                        </div>
+                        <h4 class="Blog-Title">8 Cool Type 36 Open Kitchen Design Ideas</h4>
+                    </div>
+                </div>
+
+                <div class="Blog-Card">
+                    <img class="Blog-Image" src="images/BlogImage.png" alt="Blog Image">
+                    <div class="Blog-Details">
+                        <div class="Blog-Date">
+                            <p class="Blog-Date-Text">May 16, 2024</p>
+                            <div class="Read-time">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="Blog-Read-time">12 min reading time</p>
+                            </div>
+                        </div>
+                        <h4 class="Blog-Title">8 Cool Type 36 Open Kitchen Design Ideas</h4>
+                    </div>
+                </div>
+
+                <div class="Blog-Card">
+                    <img class="Blog-Image" src="images/BlogImage.png" alt="Blog Image">
+                    <div class="Blog-Details">
+                        <div class="Blog-Date">
+                            <p class="Blog-Date-Text">May 16, 2024</p>
+                            <div class="Read-time">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.375C8.39303 2.375 6.82214 2.85152 5.486 3.74431C4.14985 4.6371 3.10844 5.90605 2.49348 7.3907C1.87852 8.87535 1.71762 10.509 2.03112 12.0851C2.34463 13.6612 3.11846 15.1089 4.25476 16.2452C5.39106 17.3815 6.8388 18.1554 8.4149 18.4689C9.99099 18.7824 11.6247 18.6215 13.1093 18.0065C14.594 17.3916 15.8629 16.3502 16.7557 15.014C17.6485 13.6779 18.125 12.107 18.125 10.5C18.1227 8.34581 17.266 6.28051 15.7427 4.75727C14.2195 3.23403 12.1542 2.37727 10 2.375ZM10 17.375C8.64026 17.375 7.31105 16.9718 6.18046 16.2164C5.04987 15.4609 4.16868 14.3872 3.64833 13.1309C3.12798 11.8747 2.99183 10.4924 3.2571 9.15875C3.52238 7.82513 4.17716 6.60013 5.13864 5.63864C6.10013 4.67716 7.32514 4.02237 8.65876 3.7571C9.99238 3.49183 11.3747 3.62798 12.631 4.14833C13.8872 4.66868 14.9609 5.54987 15.7164 6.68045C16.4718 7.81104 16.875 9.14025 16.875 10.5C16.8729 12.3227 16.1479 14.0702 14.8591 15.3591C13.5702 16.6479 11.8227 17.3729 10 17.375ZM15 10.5C15 10.6658 14.9342 10.8247 14.8169 10.9419C14.6997 11.0592 14.5408 11.125 14.375 11.125H10C9.83424 11.125 9.67527 11.0592 9.55806 10.9419C9.44085 10.8247 9.375 10.6658 9.375 10.5V6.125C9.375 5.95924 9.44085 5.80027 9.55806 5.68306C9.67527 5.56585 9.83424 5.5 10 5.5C10.1658 5.5 10.3247 5.56585 10.4419 5.68306C10.5592 5.80027 10.625 5.95924 10.625 6.125V9.875H14.375C14.5408 9.875 14.6997 9.94085 14.8169 10.0581C14.9342 10.1753 15 10.3342 15 10.5Z" fill="#70707B"/>
+                                </svg>
+                                <p class="Blog-Read-time">12 min reading time</p>
+                            </div>
+                        </div>
+                        <h4 class="Blog-Title">8 Cool Type 36 Open Kitchen Design Ideas</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <svg width="72" height="12" viewBox="0 0 72 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#18181B"/>
+                    <circle cx="26" cy="6" r="5.5" stroke="#70707B"/>
+                    <circle cx="46" cy="6" r="5.5" stroke="#70707B"/>
+                    <circle cx="66" cy="6" r="5.5" stroke="#70707B"/>
+                </svg>
+                <svg width="88" height="40" viewBox="0 0 88 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9997 36.6667C29.2044 36.6667 36.6663 29.2048 36.6663 20C36.6663 10.7953 29.2044 3.33337 19.9997 3.33337C10.7949 3.33337 3.33301 10.7953 3.33301 20C3.33301 29.2048 10.7949 36.6667 19.9997 36.6667Z" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.833 20H15.833" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.167 15L14.167 20L19.167 25" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M67.9997 3.33337C58.7997 3.33337 51.333 10.8 51.333 20C51.333 29.2 58.7997 36.6667 67.9997 36.6667C77.1997 36.6667 84.6663 29.2 84.6663 20C84.6663 10.8 77.1997 3.33337 67.9997 3.33337ZM74.7163 20.8834L69.7163 25.8834C69.4663 26.1334 69.1497 26.25 68.833 26.25C68.5163 26.25 68.1997 26.1334 67.9497 25.8834C67.4663 25.4 67.4663 24.6 67.9497 24.1167L70.8163 21.25H62.1663C61.483 21.25 60.9163 20.6834 60.9163 20C60.9163 19.3167 61.483 18.75 62.1663 18.75H70.8163L67.9497 15.8834C67.4663 15.4 67.4663 14.6 67.9497 14.1167C68.433 13.6334 69.233 13.6334 69.7163 14.1167L74.7163 19.1167C75.1997 19.6 75.1997 20.4 74.7163 20.8834Z" fill="#18181B"/>
+                </svg>
+                    
+            </div>
+    </section>
+
+    <section class="Contact-SECTION">
+        <div class="contact-Form">
+            <div class="contact-intro">
+                <h2 class="contact-title text-content">Need a help to find your comfort home?</h2>
+                <p class="contact-text text-content">Have a question or need more information? Reach out to us and we’ll get back to you shortly.</p>
+            </div>
+            <div class="contact-fields">
+                <input type="text" class="name contact-input" placeholder="Enter your name">
+                <input type="email" class="email contact-input" placeholder="Enter your email">
+                <textarea class="message contact-input" placeholder="Enter your message"></textarea>
+                <button class="contact-button contact-input" type="submit">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+
+                <div class="company-info">
+                    <h2 class="text-color">We are an experienced real estate agency based in United Kingdom</h2>
+                    <div class = "contact-Info">
+                        <div>
+                            <p class="text-color2">General Enquiries</p>
+                            <p class="text-color">info@example.com</p>
+                        </div>
+                        <div>
+                            <p class="text-color2">Phone</p>
+                            <p class="text-color">+1 555-0123-456</p>
+                        </div>
+                        <div>
+                            <p class="text-color2">Office</p>
+                            <p class="text-color">789 Elm Street, Springfield, Illinois 62704</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="footer-menu">
+                        <p class="text-color2">Navigation</p>
+                        <a class="btn menu-btn" href="index.html">Home</a>
+                        <a class="btn menu-btn" href="about.html">About us</a>
+                        <a class="btn menu-btn" href="contact.html">Contact</a>
+                        <a class="btn menu-btn" href="Property.html">Property</a>
+                        <a class="btn menu-btn" href="FAQ.html">FAQ's</a>
+                        <a class="btn menu-btn" href="Blog.html">Blog</a>
+                        <a class="btn menu-btn" href="Agent.html">Agent</a>
+                    </div>
+                    <div class="footer-menu">
+                        <p class="text-color2">Follow Us</p>
+                        <a class="btn menu-btn" href="Facebook.com">Facebook</a>
+                        <a class="btn menu-btn" href="Instagram.com">Instagram</a>
+                        <a class="btn menu-btn" href="Twitter.com">Twitter</a>
+                        <a class="btn menu-btn" href="Behance.com">Behance</a>
+                        <a class="btn menu-btn" href="Dribbble.com">Dribbble</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="footer-Bottom">
+                <div class="line"></div>
+                <div class="footer-text">
+                    <a class="logo" href="index.html">
+                        <svg width="107" height="25" viewBox="0 0 107 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#FCFCFC"/>
+                        <path d="M39.8423 19.74C35.4023 19.74 32.6223 16.8 32.6223 12.12C32.6223 7.5 35.5623 4.46 39.9823 4.46C43.6823 4.46 46.3423 6.58 46.8023 9.9H43.3823C42.9423 8.42 41.6823 7.58 39.9023 7.58C37.5023 7.58 36.0423 9.28 36.0423 12.1C36.0423 14.88 37.5223 16.62 39.9023 16.62C41.7223 16.62 43.0623 15.72 43.4623 14.26H46.8223C46.3023 17.56 43.5423 19.74 39.8423 19.74ZM48.0692 14.48C48.0692 11.32 50.3892 9.2 53.5892 9.2C56.7692 9.2 59.0892 11.32 59.0892 14.48C59.0892 17.64 56.7692 19.74 53.5892 19.74C50.3892 19.74 48.0692 17.64 48.0692 14.48ZM51.1692 14.46C51.1692 15.98 52.1492 16.98 53.5892 16.98C55.0092 16.98 55.9892 15.98 55.9892 14.46C55.9892 12.96 55.0092 11.96 53.5892 11.96C52.1492 11.96 51.1692 12.96 51.1692 14.46ZM63.9548 19.5H60.8748V9.5H63.7548L63.9548 10.54C64.4548 9.84 65.4348 9.18 66.8748 9.18C68.3748 9.18 69.3348 9.88 69.9148 10.94C70.4348 9.88 71.6148 9.18 73.0548 9.18C75.6348 9.18 76.9148 10.68 76.9148 12.96V19.5H73.8348V13.82C73.8348 12.56 73.1748 11.96 72.1948 11.96C71.3148 11.96 70.4348 12.44 70.4348 14.14V19.5H67.3548V13.82C67.3548 12.58 66.7148 11.98 65.7348 11.98C64.8548 11.98 63.9548 12.46 63.9548 14.14V19.5ZM78.177 9.5H79.557V8.7C79.557 5.72 81.117 4.42 83.657 4.42C84.077 4.42 84.557 4.46 85.037 4.54V7.18H84.177C82.917 7.18 82.637 7.84 82.637 8.7V9.5H85.037V12.06H82.637V19.5H79.557V12.06H78.177V9.5ZM90.7688 19.76C87.7488 19.76 85.5888 17.56 85.5888 14.48C85.5888 11.36 87.6888 9.18 90.7088 9.18C93.8488 9.18 95.8088 11.24 95.8088 14.5V15.28L88.5488 15.32C88.7288 16.64 89.4688 17.26 90.8288 17.26C91.9888 17.26 92.8088 16.84 93.0288 16.12H95.8488C95.4888 18.34 93.5088 19.76 90.7688 19.76ZM90.7288 11.68C89.5088 11.68 88.8288 12.22 88.5888 13.42H92.7488C92.7488 12.36 91.9688 11.68 90.7288 11.68ZM100.555 19.76C98.435 19.76 97.115 18.52 97.115 16.56C97.115 14.72 98.415 13.58 100.815 13.4L103.615 13.18V13.02C103.615 12.04 103.015 11.52 101.915 11.52C100.615 11.52 99.915 12.02 99.915 12.92H97.355C97.355 10.66 99.215 9.18 102.075 9.18C104.975 9.18 106.615 10.8 106.615 13.66V19.5H103.895L103.695 18.18C103.375 19.1 102.055 19.76 100.555 19.76ZM101.635 17.48C102.815 17.48 103.635 16.9 103.635 15.76V15.22L102.075 15.36C100.735 15.48 100.255 15.78 100.255 16.42C100.255 17.14 100.695 17.48 101.635 17.48Z" fill="#FCFCFC"/>
+                        </svg>
+                    </a>
+                    <p class="text-color2">© 2023-2024, All Rights Reserved</p>
+                    <a class="btn BackTO" href="#hero">Back to top 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6666 5.21928V13.3337H7.33327V5.21928L3.75726 8.79526L2.81445 7.85246L7.99993 2.66699L13.1853 7.85246L12.2425 8.79526L8.6666 5.21928Z" fill="#FCFCFC"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
